@@ -4,4 +4,156 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+
+
+
+
+
+
+/* UTILITIES */
+.flex {
+    display: flex;
+}
+
+.only-mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* COMMON */
+
+.medium {
+    max-width: 1210px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    margin: 0 auto;
+}
+
+
+:root {
+    --text-col: #fdc15f;
+    --primary-col: #9792e4;
+    --secondary-col: #0084fd;
+    --tertiary-col: #b5ddff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.big {
+    width: calc((100%/3 - 25px) + (100%/3));
+}
+
+.small {
+    width: calc(100% / 3 - 25px);
+}
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+header {
+    height: 75px;
+    background-color: var(--secondary-col);
+}
+
+header .nav-bar {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* MAIN */
+
+.application .container .box {
+    background-color: var(--tertiary-col);
+    height: calc(1210px / 3 - 50px);
+}
+
+.application .container {
+    gap: 25px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media screen and (max-width:576px) {
+
+    .only-mobile {
+        display: block;
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+
+}
+
+
+/* TABLET */
+
+@media screen and (max-width:992px) {
+
+    .only-mobile {
+        display: block;
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    .only-desktop {
+        display: none;
+    }
 }
