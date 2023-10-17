@@ -189,6 +189,72 @@ header .nav-bar {
 
 
 
+/* FOURTH SECTION : BENEFITS */
+
+.benefits {
+    background-color: var(--primary-col);
+}
+
+.benefits .container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.benefits .box.small {
+    width: calc(100% / 3 - 30px);
+
+
+
+
+
+
+    /* DEBUG */
+
+    height: 200px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIFTH SECTION : ABOUT US  */
+
+.about-us .container {
+    padding: 100px 40px;
+}
+
+.about-us .col-big {
+    width: 70%;
+
+    /* DEBUG */
+    border: 1px solid black;
+
+    height: 300px;
+}
+
+.about-us .col-small {
+    width: 30%;
+
+    /* DEBUG */
+    border: 1px solid black;
+    height: 300px;
+}
+
+
+
 
 
 
@@ -199,9 +265,28 @@ header .nav-bar {
 /* FOOTER */
 
 
+/* FIRST SECTION : BUY */
+
+.buy {
+    background-color: var(--primary-col);
+}
+
+.buy .container {
+    text-align: center;
+}
 
 
 
+
+
+/* SECOND SECTION : CREDITS */
+.credits {
+    background-color: #333333;
+}
+
+.credits .container {
+    text-align: center;
+}
 
 
 
@@ -251,6 +336,10 @@ header .nav-bar {
         flex-direction: column;
         align-items: center;
         height: 1400px;
+    }
+
+    .benefits .box.small {
+        width: calc(100% / 2 - 30px);
     }
 
 }
@@ -353,5 +442,16 @@ header .nav-bar {
         width: 100%;
     }
 
+    .about-us .container .col-big {
+        width: 360px;
+
+        /* DEBUG */
+
+        height: 520px;
+    }
+
+    .about-us .container .col-small {
+        width: 360px;
+    }
 
 }
