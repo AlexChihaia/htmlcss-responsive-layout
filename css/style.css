@@ -40,7 +40,7 @@
 
 
 :root {
-    --text-col: #fdc15f;
+    --text-col: #3f3c37;
     --primary-col: #9792e4;
     --secondary-col: #0084fd;
     --tertiary-col: #b5ddff;
@@ -72,12 +72,14 @@ a {
 header {
     height: 75px;
     background-color: var(--secondary-col);
+    width: 100%;
 }
 
 header .nav-bar {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -104,8 +106,37 @@ header .nav-bar {
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 100px;
+    justify-content: center;
 }
 
+.planning .col.one {
+    width: 60%;
+    border: 1px solid black;
+    height: 700px;
+}
+
+.planning .col.two {
+    width: 40%;
+    border: 1px solid black;
+    height: 700px;
+
+}
+
+
+
+.planning {
+    background-color: var(--primary-col);
+}
+
+
+.planning .container {
+    padding-left: 50px;
+    height: 925px;
+    padding-top: 120px;
+    padding-bottom: 65px;
+    padding-left: 120px;
+    padding-right: 130px;
+}
 
 
 
@@ -128,7 +159,8 @@ header .nav-bar {
 
 /* MOBILE */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
+
 
     .only-mobile {
         display: block;
@@ -139,6 +171,57 @@ header .nav-bar {
     .only-desktop {
         display: none;
     }
+
+    header {
+        max-width: 768px;
+    }
+
+
+    .application .container {
+        flex-direction: column;
+        align-items: center;
+        width: 435px;
+        margin: 0 auto;
+    }
+
+    .box.big {
+        flex-direction: column;
+        width: calc(100% / 3 - 25px);
+        min-height: 600px;
+    }
+
+    .application.col {
+        height: 50%;
+        width: 100%;
+    }
+
+    .box {
+        min-width: 360px;
+    }
+
+    .planning .col {
+        border: 1px solid black;
+    }
+
+    .planning .col.one,
+    .planning .col.two {
+        width: 70%;
+    }
+
+    .planning .col.one {
+        height: 60%;
+    }
+
+    .planning .col.two {
+        height: 40%;
+    }
+
+    .planning .container {
+        flex-direction: column;
+        align-items: center;
+        height: 1400px;
+    }
+
 
 }
 
@@ -156,4 +239,31 @@ header .nav-bar {
     .only-desktop {
         display: none;
     }
+
+    .application .container {
+        justify-content: center;
+    }
+
+    .application.col {
+        width: 50%;
+    }
+
+
+
+    .planning .col.one {
+        height: 60%;
+        width: 100%;
+    }
+
+    .planning .col.two {
+        height: 40%;
+        width: 100%;
+    }
+
+    .planning .container {
+        flex-direction: column;
+        align-items: center;
+        height: 1400px;
+    }
+
 }
